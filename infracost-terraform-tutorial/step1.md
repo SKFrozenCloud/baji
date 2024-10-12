@@ -1,10 +1,10 @@
 ### Step 1: Setup Terraform project
 
-In this step, we will initialize and prepare a simple Terraform project that provisions an AWS S3 bucket.
+In this step, we will initialize and prepare a simple Terraform project that provisions an AWS EC2 Server.
 
 1. Navigate to the `terraform` directory: `cd terraform`
 
-2. Paste the following terraform infrastructure code:
+2. Create the file `main.tf` and paste the following terraform infrastructure code into it:
 
 ```terraform
 provider "aws" {
@@ -17,7 +17,6 @@ resource "aws_instance" "small_server" {
 }
 ```
 
-3. Run `terraform init` to initialize the Terraform configuration.
-4. Next, run `terraform plan` to generate a plan for your infrastructure.
+This will provision a small server on AWS.
 
-You should see a Terraform plan that provisions a simple S3 bucket.
+3. Run `terraform init` to initialize the Terraform configuration.

@@ -1,40 +1,39 @@
 {
-    "title": "Integrate Terraform and Infracost with GitHub Actions CI/CD",
-    "description": "In this scenario, you'll learn how to set up Terraform, integrate Infracost for cost estimates, and automate it using GitHub Actions CI/CD pipeline. We'll use nektos/act to run the pipeline locally and showcase cost estimates.",
-    "details": {
-      "steps": [
-        {
-          "title": "Step 1 - Setup Terraform project",
-          "text": "step1.md"
-        },
-        {
-          "title": "Step 2 - Install Infracost and Setup Configuration",
-          "text": "step2.md"
-        },
-        {
-          "title": "Step 3 - GitHub Actions CI/CD Workflow",
-          "text": "step3.md"
-        },
-        {
-          "title": "Step 4 - Running nektos/act locally to test",
-          "text": "step4.md"
-        },
-        {
-          "title": "Step 5 - Modifying Terraform and observing cost changes",
-          "text": "step5.md"
-        },
-        {
-          "title": "Step 6 - Additional Integrations and Features",
-          "text": "step6.md"
-        }
-      ],
-      "intro": {
-        "courseData": "background.sh",
-        "code": "foreground.sh"
+  "title": "Integrate Terraform and Infracost with GitHub Actions CI/CD",
+  "description": "In this scenario, you'll learn how to set up Terraform, integrate Infracost for cost estimates, and automate it using GitHub Actions CI/CD pipeline. We'll use nektos/act to run the pipeline locally and showcase cost estimates.",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1 - Setup Terraform project",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2 - Install Infracost and Setup Configuration",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3 - GitHub Actions CI/CD Workflow",
+        "text": "step3.md"
+      },
+      {
+        "title": "Step 4 - Running Infracost",
+        "text": "step4.md"
+      },
+      {
+        "title": "Step 5 - Modifying Terraform and observing cost changes",
+        "text": "step5.md"
+      },
+      {
+        "title": "Step 6 - Additional Integrations and Features",
+        "text": "step6.md"
       }
-    },
-    "backend": {
-      "imageid": "ubuntu"
+    ],
+    "intro": {
+      "courseData": "background.sh",
+      "code": "foreground.sh"
     }
+  },
+  "backend": {
+    "imageid": "ubuntu"
   }
-  
+}

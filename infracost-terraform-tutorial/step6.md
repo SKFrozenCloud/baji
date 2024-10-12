@@ -1,8 +1,3 @@
-
-#### 12. **step6.md**
-Title: Step 6 - Additional Integrations and Features
-
-```markdown
 ### Step 6: Additional Integrations and Features
 
 Here are some additional features and ways to extend this workflow:

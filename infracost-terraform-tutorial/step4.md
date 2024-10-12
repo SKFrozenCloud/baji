@@ -1,8 +1,7 @@
-### Step 4: Running nektos/act locally to test
+### Step 4: Running Infracost
 
-Before pushing to GitHub, you can test the GitHub Actions workflow locally using `nektos/act`.
+When pushing to GitHub, you can see the Github Actions working and commenting on pull requests with the projected cost estimates.
 
-1. Make sure Docker is running.
-2. In your project root, run the following command to simulate a push event:
-   ```bash
-   act push -j terraform
+But for now, we can test it by running infracost locally
+
+Run: `infracost breakdown --path terraform`

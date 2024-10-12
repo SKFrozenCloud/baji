@@ -23,8 +23,8 @@ jobs:
         uses: infracost/actions@v2
         with:
           path: ./terraform/tfplan
-          api_key: ico-6a6kAz5NZKHHDAwK9nXC5ZbcFlyhqKKd
+          api_key: ${{ secrets.INFRACOST_API_KEY }}
 
       - name: Post Infracost Comment
         if: github.event_name == 'pull_request'
-        run: infracost comment github --path infracost.json --repo ${{ github.repository }} --pull-request ${{ github.event.pull_request.number }}
+        run: infracost comment github --path infracost --repo ${{ github.repository }} --pull-request ${{ github.event.pull_request.number }}

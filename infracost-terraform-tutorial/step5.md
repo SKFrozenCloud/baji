@@ -1,15 +1,10 @@
-
-#### 11. **step5.md**
-Title: Step 5 - Modifying Terraform and observing cost changes
-
-```markdown
 ### Step 5: Modifying Terraform and observing cost changes
 
 Let's modify the Terraform configuration and observe how the cost changes:
 
-1. Open the `main.tf` file in `/home/kodekloud/terraform/`.
+1. Open the `main.tf` file.
 
-2. Change the terraform file to this:
+2. Change the terraform file to this, which is a much larger EC2 instance on AWS:
 
 ```
 provider "aws" {
@@ -22,6 +17,6 @@ resource "aws_instance" "big_server" {
 }
 ```
 
-3. Re-run the workflow with `act`:
-   ```bash
-   act push -j terraform
+3. Re-run the infracost cost estimate command
+
+Run: `infracost breakdown --path terraform`
