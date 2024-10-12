@@ -19,16 +19,11 @@ jobs:
         run: terraform init
         working-directory: ./terraform
 
-      - name: Terraform Plan
-        run: terraform plan -out=tfplan
-        working-directory: ./terraform
-
       - name: Infracost breakdown
         uses: infracost/actions@v2
         with:
           path: ./terraform/tfplan
-          # Use your own Infracost API Key
-          api_key: ${{ secrets.INFRACOST_API_KEY }}
+          api_key: ico-6a6kAz5NZKHHDAwK9nXC5ZbcFlyhqKKd
 
       - name: Post Infracost Comment
         if: github.event_name == 'pull_request'

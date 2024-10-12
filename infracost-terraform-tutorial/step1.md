@@ -8,18 +8,12 @@ In this step, we will initialize and prepare a simple Terraform project that pro
 
 ```terraform
 provider "aws" {
-  region = "us-east-1"
+  region = "us-west-2"
 }
 
-resource "aws_s3_bucket" "example" {
-  bucket = var.bucket_name
-  acl    = "private"
-}
-
-variable "bucket_name" {
-  description = "The name of the S3 bucket"
-  type        = string
-  default     = "example-bucket-12345"
+resource "aws_instance" "small_server" {
+  ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 AMI
+  instance_type = "t2.micro"
 }
 ```
 

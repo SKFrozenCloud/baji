@@ -14,18 +14,9 @@ sudo apt update && sudo apt install terraform
 curl -fsSL https://raw.githubusercontent.com/infracost/infracost/master/scripts/install.sh | sh
 
 # Install nektos/act
+cd /
 curl --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
-
-# GitHub CLI installation (optional for better management)
-apt-get install gh -y
 
 # Git setup
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
-
-# Create a Terraform project directory
-mkdir -p /home/kodekloud/terraform && cd /home/kodekloud/terraform
-terraform init
-
-# Prepare GitHub Actions directory
-mkdir -p /home/kodekloud/.github/workflows
