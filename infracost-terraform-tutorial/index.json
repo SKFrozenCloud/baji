@@ -34,9 +34,9 @@
       },
       "assets": {
         "host01": [
-          {"file": "terraform/main.tf", "target": "/home/kodekloud/terraform/main.tf"},
-          {"file": "terraform/variables.tf", "target": "/home/kodekloud/terraform/variables.tf"},
-          {"file": "github/workflows/ci.yml", "target": "/home/kodekloud/.github/workflows/ci.yml"}
+          {"file": "./terraform/main.tf", "target": "/home/kodekloud/terraform/main.tf"},
+          {"file": "./terraform/variables.tf", "target": "/home/kodekloud/terraform/variables.tf"},
+          {"file": "./github/workflows/ci.yml", "target": "/home/kodekloud/.github/workflows/ci.yml"}
         ]
       }
     },
