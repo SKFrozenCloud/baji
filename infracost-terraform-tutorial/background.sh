@@ -22,10 +22,14 @@ git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
 
 # Project setup
-mkdir -p /root/tutorial
+cd /root
+mkdir /root/tutorial
 cd /root/tutorial
 mkdir terraform
-mkdir -p .github/workflows
+mkdir .github
+cd .github
+mkdir workflows
+cd ..
 git init
 
 GITIGNORE_CONTENT="
