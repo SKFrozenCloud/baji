@@ -2,21 +2,30 @@
 
 Let's modify the Terraform configuration and observe how the cost changes:
 
-1. Open the `main.tf` file.
+1. Navigate to the `terraform` directory: `cd terraform`
 
-2. Change the terraform file to this, which is a much larger EC2 instance on AWS:
+2. Open the `main.tf` file `nano main.tf`.
 
-```
-provider "aws" {
-  region = "us-west-2"
-}
+3. Change the terraform file to this, which is a much larger EC2 instance on AWS:
 
-resource "aws_instance" "big_server" {
-  ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 AMI
-  instance_type = "m5.large"
-}
-```
+  ```
+  provider "aws" {
+    region = "us-west-2"
+  }
 
-3. Re-run the infracost cost estimate command
+  resource "aws_instance" "big_server" {
+    ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 AMI
+    instance_type = "m5.large"
+  }
+  ```
 
-Run: `infracost breakdown --path terraform`
+4. Save the file in `nano`
+  - After pasting the content, press Ctrl + O to write the changes.
+  - Press Enter to confirm the file name.
+  - Then, press Ctrl + X to exit `nano`
+
+5. Navigate back to the main directory `cd ..`
+
+6. Re-run the infracost cost estimate command
+
+  - Run: `infracost breakdown --path terraform`
