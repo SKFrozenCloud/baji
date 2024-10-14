@@ -28,3 +28,4 @@ jobs:
       - name: Post Infracost Comment
         if: github.event_name == 'pull_request'
         run: infracost comment github --path infracost --repo ${{ github.repository }} --pull-request ${{ github.event.pull_request.number }}
+
