@@ -6,17 +6,35 @@ In this step, we will initialize and prepare a simple Terraform project that pro
 
 2. Create the file `main.tf` and paste the following terraform infrastructure code into it:
 
-```terraform
-provider "aws" {
-  region = "us-west-2"
-}
+  2.1. Use the `touch` command to create the file:
 
-resource "aws_instance" "small_server" {
-  ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 AMI
-  instance_type = "t2.micro"
-}
-```
+    ```bash
+    touch main.tf
+    ```
+  2.2. Open the file using the `nano` editor:
+    
+    ```bash
+    nano main.tf
+    ```
+  2.3. Paste the following Terraform code into the `main.tf` file:
 
-This will provision a small server on AWS.
+    ```terraform
+    provider "aws" {
+      region = "us-west-2"
+    }
+
+    resource "aws_instance" "small_server" {
+      ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 AMI
+      instance_type = "t2.micro"
+    }
+    ```
+    This will provision a small server on AWS.
+    
+  2.4. Save the file in nano
+
+  - After pasting the content, press Ctrl + O to write the changes.
+  - Press Enter to confirm the file name.
+  - Then, press Ctrl + X to exit nano.
+
 
 3. Run `terraform init` to initialize the Terraform configuration.
