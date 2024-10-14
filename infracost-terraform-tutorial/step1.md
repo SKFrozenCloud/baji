@@ -22,13 +22,11 @@ In this step, we will initialize and prepare a simple Terraform project that pro
           instance_type = "t2.micro"
         }
         ```
-      
-      This will provision a small server on AWS.
 
     4. Save the file in `nano`
 
-    - After pasting the content, press Ctrl + O to write the changes.
-    - Press Enter to confirm the file name.
-    - Then, press Ctrl + X to exit `nano`.
+        - After pasting the content, press Ctrl + O to write the changes.
+        - Press Enter to confirm the file name.
+        - Then, press Ctrl + X to exit `nano`.
 
 3. Run `terraform init` to initialize the Terraform configuration.
