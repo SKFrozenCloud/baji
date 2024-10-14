@@ -47,7 +47,7 @@ We have configured a CI/CD pipeline using GitHub Actions in the `.github/workflo
     - Then, press Ctrl + X to exit `nano`.
 
     The script will do the following:
-
+    
     - **Infracost Breakdown**: It calculates the cost of the Terraform resources using Infracost.
     - **Post Comment**: If this is a pull request, Infracost will post the cost breakdown as a comment.
 
