@@ -6,11 +6,11 @@ We have configured a CI/CD pipeline using GitHub Actions in the `.github/workflo
 
 2. Create `ci.yml` and add the code:
 
-    1. `touch ci.yml`
+    2.1. `touch ci.yml`
 
-    2. `nano ci.yml`
+    2.2. `nano ci.yml`
 
-    3. Paste the following:
+    2.3. Paste the following:
 
       ```
       name: CI Pipeline
@@ -41,7 +41,7 @@ We have configured a CI/CD pipeline using GitHub Actions in the `.github/workflo
               run: infracost comment github --path infracost.json --repo ${{ github.repository }} --pull-request ${{ github.event.pull_request.number }}
       ```
 
-    4. Save the file in `nano`
+    2.4. Save the file in `nano`
       - After pasting the content, press Ctrl + O to write the changes.
       - Press Enter to confirm the file name.
       - Then, press Ctrl + X to exit `nano`.
