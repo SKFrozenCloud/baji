@@ -12,16 +12,16 @@ In this step, we will initialize and prepare a simple Terraform project that pro
 
     3. Paste the following Terraform code into the `main.tf` file:
 
-  ```terraform
-  provider "aws" {
-    region = "us-west-2"
-  }
+    ```terraform
+    provider "aws" {
+      region = "us-west-2"
+    }
 
-  resource "aws_instance" "small_server" {
-    ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 AMI
-    instance_type = "t2.micro"
-  }
-  ```
+    resource "aws_instance" "small_server" {
+      ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 AMI
+      instance_type = "t2.micro"
+    }
+    ```
 
     4. Save the file in `nano`
 
