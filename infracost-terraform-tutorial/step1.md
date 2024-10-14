@@ -2,19 +2,19 @@
 
 In this step, we will initialize and prepare a simple Terraform project that provisions an AWS EC2 Server.
 
-1. Navigate to the `terraform` directory: `cd terraform`
+1. Navigate to the `terraform` directory: `cd terraform`.
 
 2. Create the file `main.tf` and add the terraform code:
 
-    1. Use the `touch` command to create the file:
+  1. Use the `touch` command to create the file:
 
-    `touch main.tf`
+    - `touch main.tf`
 
-    2. Open the file using the `nano` editor:
+  2. Open the file using the `nano` editor:
 
-    `nano main.tf`
+      - `nano main.tf`
 
-    3. Paste the following Terraform code into the `main.tf` file:
+  3. Paste the following Terraform code into the `main.tf` file:
 
     ```terraform
     provider "aws" {
@@ -29,8 +29,7 @@ In this step, we will initialize and prepare a simple Terraform project that pro
 
     This will provision a small server on AWS.
 
-    4. Save the file in `nano`
-
+  4. Save the file in `nano` :
     - After pasting the content, press Ctrl + O to write the changes.
     - Press Enter to confirm the file name.
     - Then, press Ctrl + X to exit `nano`.

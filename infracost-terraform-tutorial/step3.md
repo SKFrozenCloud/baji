@@ -4,7 +4,8 @@ We have configured a CI/CD pipeline using GitHub Actions in the `.github/workflo
 
 1. Navigate to the `.github` directory: `cd ../.github/workflows/`
 
-Create `ci.yml` and add the CI pipeline:
+2. Create `ci.yml` and add the code:
+
   1. `touch ci.yml`
 
   2. `nano ci.yml`
@@ -45,11 +46,12 @@ Create `ci.yml` and add the CI pipeline:
     - Press Enter to confirm the file name.
     - Then, press Ctrl + X to exit `nano`.
 
-The script will do the following:
-1. **Infracost Breakdown**: It calculates the cost of the Terraform resources using Infracost.
-2. **Post Comment**: If this is a pull request, Infracost will post the cost breakdown as a comment.
+    The script will do the following:
 
-2. Navigate to the main directory: `cd ../../`
+    - **Infracost Breakdown**: It calculates the cost of the Terraform resources using Infracost.
+    - **Post Comment**: If this is a pull request, Infracost will post the cost breakdown as a comment.
+
+3. Navigate to the main directory: `cd ../../`
 
 Then commit the changes:
 
