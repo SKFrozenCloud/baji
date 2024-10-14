@@ -29,4 +29,5 @@ In this step, we will initialize and prepare a simple Terraform project that pro
         - Press Enter to confirm the file name.
         - Then, press Ctrl + X to exit `nano`.
 
+        
 3. Run `terraform init` to initialize the Terraform configuration.
