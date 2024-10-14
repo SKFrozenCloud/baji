@@ -8,6 +8,6 @@
 
     Execute the following command which contains a functioning example API key:
 
-    `infracost configure set api_key ico-6a6kAz5NZKHHDAwK9nXC5ZbcFlyhqKKd`.
+    `infracost configure set api_key ico-6a6kAz5NZKHHDAwK9nXC5ZbcFlyhqKKd`
 
 > Note: You can get a free Infracost API key by registering on the [Infracost website](https://www.infracost.io/).
