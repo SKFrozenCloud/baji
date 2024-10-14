@@ -12,34 +12,34 @@ We have configured a CI/CD pipeline using GitHub Actions in the `.github/workflo
 
     2.3. Paste the following:
 
-      ```
-      name: CI Pipeline
+    ```
+    name: CI Pipeline
 
-      on:
-        push:
-          branches:
-            - master
+    on:
+      push:
+        branches:
+          - master
 
-      jobs:
-        terraform:
-          runs-on: ubuntu-latest
-          steps:
-            - name: Checkout Code
-              uses: actions/checkout@v2
+    jobs:
+      terraform:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout Code
+            uses: actions/checkout@v2
 
-            - name: Setup Terraform
-              uses: hashicorp/setup-terraform@v1
+          - name: Setup Terraform
+            uses: hashicorp/setup-terraform@v1
 
-            - name: Infracost breakdown
-              uses: infracost/actions@v2
-              with:
-                path: ./terraform
-                api_key: ${{ secrets.INFRACOST_API_KEY }}
+          - name: Infracost breakdown
+            uses: infracost/actions@v2
+            with:
+              path: ./terraform
+              api_key: ${{ secrets.INFRACOST_API_KEY }}
 
-            - name: Post Infracost Comment
-              if: github.event_name == 'pull_request'
-              run: infracost comment github --path infracost.json --repo ${{ github.repository }} --pull-request ${{ github.event.pull_request.number }}
-      ```
+          - name: Post Infracost Comment
+            if: github.event_name == 'pull_request'
+            run: infracost comment github --path infracost.json --repo ${{ github.repository }} --pull-request ${{ github.event.pull_request.number }}
+    ```
 
     2.4. Save the file in `nano`
       - After pasting the content, press Ctrl + O to write the changes.

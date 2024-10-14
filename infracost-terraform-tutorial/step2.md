@@ -4,8 +4,7 @@
 
 2. You can install it with this command: 
     - `curl -fsSL https://raw.githubusercontent.com/infracost/infracost/master/scripts/install.sh | sh`
-
-\
+    
 
 3. Set your API key: `infracost configure set api_key YOUR_API_KEY`.
 
