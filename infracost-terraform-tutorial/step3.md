@@ -6,9 +6,9 @@ We have configured a CI/CD pipeline using GitHub Actions in the `.github/workflo
 
 2. Create `ci.yml` and add the code:
 
-    2.1. `touch ci.yml`
+    2.1. Create the file with `touch ci.yml`
 
-    2.2. `nano ci.yml`
+    2.2. Open the file with `nano ci.yml`
 
     2.3. Paste the following:
 
