@@ -20,12 +20,12 @@ Let's modify the Terraform configuration and observe how the cost changes:
     ```
 
 4. Save the file in `nano`
-  - After pasting the content, press Ctrl + O to write the changes.
-  - Press Enter to confirm the file name.
-  - Then, press Ctrl + X to exit `nano`
+    - After pasting the content, press Ctrl + O to write the changes.
+    - Press Enter to confirm the file name.
+    - Then, press Ctrl + X to exit `nano`
 
 5. Navigate back to the main directory `cd ..`
 
 6. Re-run the infracost cost estimate command
 
-  - Run: `infracost breakdown --path terraform`
+    - Run: `infracost breakdown --path terraform`
