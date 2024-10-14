@@ -6,24 +6,24 @@ In this step, we will initialize and prepare a simple Terraform project that pro
 
 2. Create the file `main.tf` and add the terraform code:
 
-    1. Use the `touch` command to create the file `touch main.tf`
+    2.1. Use the `touch` command to create the file `touch main.tf`
 
-    2. Open the file using the `nano` editor `nano main.tf`
+    2.2. Open the file using the `nano` editor `nano main.tf`
 
-    3. Paste the following Terraform code into the `main.tf` file:
+    2.3. Paste the following Terraform code into the `main.tf` file:
 
-    ```terraform
-    provider "aws" {
-      region = "us-west-2"
-    }
+      ```terraform
+      provider "aws" {
+        region = "us-west-2"
+      }
 
-    resource "aws_instance" "small_server" {
-      ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 AMI
-      instance_type = "t2.micro"
-    }
-    ```
+      resource "aws_instance" "small_server" {
+        ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 AMI
+        instance_type = "t2.micro"
+      }
+      ```
 
-    4. Save the file in `nano`
+    2.4. Save the file in `nano`
 
         - After pasting the content, press Ctrl + O to write the changes.
         - Press Enter to confirm the file name.
