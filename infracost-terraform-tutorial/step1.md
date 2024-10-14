@@ -6,13 +6,9 @@ In this step, we will initialize and prepare a simple Terraform project that pro
 
 2. Create the file `main.tf` and add the terraform code:
 
-    1. Use the `touch` command to create the file:
+    1. Use the `touch` command to create the file `touch main.tf`
 
-      - `touch main.tf`
-
-    2. Open the file using the `nano` editor:
-
-      - `nano main.tf`
+    2. Open the file using the `nano` editor `nano main.tf`
 
     3. Paste the following Terraform code into the `main.tf` file:
 
